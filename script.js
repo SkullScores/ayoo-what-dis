@@ -255,13 +255,28 @@ no.innerText="NO";
 
 document.getElementById("container").appendChild(no);
 
+// track if hover happened first time
+let firstHover=true;
+
 no.onmouseover=()=>{
 
+// change text only first time
+if(firstHover){
+
+no.innerText="NO....WTH! why are u clicking on NO, go to YESSS!!!";
+
+firstHover=false;
+
+}
+
+// keep moving every hover
 no.style.position="absolute";
+
 no.style.left=Math.random()*80+"vw";
 no.style.top=Math.random()*80+"vh";
 
 };
+
 
 button.onclick=stage6;
 
@@ -342,12 +357,10 @@ await typeAppend("Status: pending...");
 }
 
 
-
-
-
 function delay(ms){
 
 return new Promise(r=>setTimeout(r,ms));
 
 }
+
 
