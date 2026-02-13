@@ -91,7 +91,7 @@ typeLines(
 
 // floating symbols background
 
-const symbols=["</>","{ }","♪","♫","🎸","JESUSSSS","Ayy chup kor toh b***"];
+const symbols=["</>","{ }","♪","♫","Biochem😭","JESUSSSS","Ayy chup kor toh b***","🙏","(❁´◡`❁)","╰(*°▽°*)╯"];
 
 setInterval(()=>{
 
@@ -153,7 +153,7 @@ document.body.style.background="linear-gradient(135deg,#0f0f0f,#2a0f1f,#ff6ec7)"
 const floating=document.createElement("div");
 
 floating.className="floatingConnection";
-floating.innerText="Connection Established!";
+floating.innerText="Connection Established!!";
 
 floating.style.left="40vw";
 floating.style.top="40vh";
@@ -230,7 +230,7 @@ await typeAppend("I'm glad it happened...");
 
 await delay(1200);
 
-await typeAppend("And I'm glad it's you! 💞");
+await typeAppend("And I'm sooo glad it's you! 💞");
 
 // update button for next stage
 button.innerText = "Continue?? :)";
@@ -286,7 +286,7 @@ if(noBtn) noBtn.remove();
 text.innerHTML = "";
 
 // show system happy
-await typeAppend("System state: happy");
+await typeAppend("System state: happy..YAYYY");
 
 await delay(2000);
 
@@ -298,7 +298,7 @@ await delay(2000);
 // rewriting baseline
 await typeAppend("Rewriting baseline...");
 
-await delay(2500);
+await delay(1500);
 
 // create exit button
 const exitBtn = document.createElement("button");
@@ -320,19 +320,19 @@ text.innerHTML = "";
 // shutdown header
 await typeAppend("END OF TRANSMISSION");
 
-await delay(1500);
+await delay(1000);
 
 // resume message
-await typeAppend("Program resumes when we meet on 26th 👀🥰!");
+await typeAppend("Program resumes when we meet on 25th 👀🥰!");
 
-await delay(1500);
+await delay(1000);
 
 // milestone message (new feature)
 await typeAppend(" ");
 
 await delay(800);
 
-await typeAppend("Next milestone: Meeting in person");
+await typeAppend("Next milestone: Meeting in person 😉");
 
 await delay(1000);
 
@@ -350,3 +350,4 @@ function delay(ms){
 return new Promise(r=>setTimeout(r,ms));
 
 }
+
